@@ -1,0 +1,41 @@
+Aninhamento sass
+
+ul -> display inline-flex
+
+list-style-type
+
+make line with span and border top
+
+
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.6rem;
+
+    .menu {
+        background: variaveis.$cor-primaria;
+        color: variaveis.$cor-secundaria;
+    }
+}
+
+Esse é o código a ser usado, pois ele cria uma nova classe menu dentro de nav (aninhamento SASS), e define as cores primária e secundária para o fundo e a cor do texto, respectivamente. Com o aninhamento, podemos organizar o código bem semelhante a estrutura do HTML, trazendo uma hierarquia de estilos em que vamos encaixando um elemento dentro ou após o outro.
+
+P´re-processadores CSS -> criados para melhorar a forma de construção de estilos CSS e adicionar recursos a ele, como variáveis, funções e aninhamento.
+
+-> Principais pré-processadores CSS
+   -> SASS
+   -> Less
+   -> Stylus (2009)
+
+SASS -> primeiro e mais usado
+-> extensão do VS Code
+-> compila código sass em css
+-> criado por Hampton Catlin, hoje não envolvido no projeto
+
+Os pré-processadores CSS como SASS oferecem vários benefícios, incluindo:
+-> Produtividade: ajudam você a escrever código CSS de forma mais *rápida e eficiente*.
+-> Legibilidade: tornam o código CSS mais *legível* e *fácil de manter*.
+-> Reusabilidade: permitem que você *reutilize código CSS* em diferentes partes do seu projeto.
+-> Extensibilidade: permitem também que você *estenda as funcionalidades do CSS* com suas próprias *funções e mixins*.
