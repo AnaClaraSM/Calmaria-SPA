@@ -1,24 +1,12 @@
-// Variáveis
-//Cores
-$cor-primaria: #0c0421;
-$cor-secundaria: #4e75ff;
-$cor-terciaria: #85a0ff;
-$cor-quaternaria: #e8f5c8;
-$cor-default: #cad4fa;
-$gradiente-primario: linear-gradient(180deg, #e8f5c8, 0%, #ffffff 96.87%);
-$gradiente-secundario: linear-gradient(180deg, rgba(255, 255, 255, 0.7) 0%, rgba(202, 212, 250, 0.3) 100%);
-// Fontes
-$ft-textos: 'Montserrat', sans-serif;
-$ft-titulos: 'Krona One', sans-serif;
+//Importar Partials
+// @import url(./abstract/_variaveis.scss); //descontinuado
+@use './abstract/variaveis'; //Recomendável
 
-body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
 
 header {
-    background: $gradiente-primario;
+    //Referenciair variáveis em um partial (arquivo.$variavel)
+    background: variaveis.$gradiente-primario;
     padding: 2rem;
 
     // Sass permite aninhar elementos
@@ -44,10 +32,54 @@ header {
             }
             a {
                 text-decoration: none;
-                color: $cor-primaria;
+                color: variaveis.$cor-primaria;
                 color: #0c0421;
                 font-weight: 500;
-                font-family: $ft-textos;
+                font-family: variaveis.$ft-textos;
+            }
+        }
+    }
+
+    #home {
+        max-width: 1040px;
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .textos-home {
+            max-width: 464px;
+            h1 {
+                font-size: 42px;
+                color: variaveis.$cor-primaria;
+                margin-bottom: 2rem;
+                font-family: variaveis.$ft-titulos;
+                span {
+                    color: variaveis.$cor-secundaria;
+                }
+            }
+            .btn-main {
+                color: white;
+                background: variaveis.$cor-secundaria;
+                border: none;
+                outline: none;
+                width: 280px;
+                // height: 66px; //66px
+                border-radius: 66px; //40px
+                padding: 24px;
+                font-family: variaveis.$ft-textos;
+                font-size: 1.3rem; //22px
+                font-weight: 600;
+                &:hover {
+                    cursor: pointer;
+                    background-color: variaveis.$cor-terciaria;
+                }
+            }
+        }
+        .img-home {
+            max-width: 474px;
+            img {
+                width: 100%;
             }
         }
     }
