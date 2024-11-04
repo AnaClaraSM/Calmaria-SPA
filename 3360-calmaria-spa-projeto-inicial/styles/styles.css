@@ -5,7 +5,7 @@ body {
 }
 
 header {
-  background: linear-gradient(180deg, #e8f5c8, 0%, #ffffff 96.87%);
+  background: linear-gradient(180deg, #e8f5c8 0%, #ffffff 96.87%);
   padding: 2rem;
 }
 header nav {
@@ -76,4 +76,9 @@ header #home .img-home {
 }
 header #home .img-home img {
   width: 100%;
+}
+
+#nosso-espaco {
+  margin: 0 auto;
+  width: 80%;
 }/*# sourceMappingURL=styles.css.map */
