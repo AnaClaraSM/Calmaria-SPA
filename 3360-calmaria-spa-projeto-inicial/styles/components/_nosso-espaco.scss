@@ -3,4 +3,37 @@
 
 #nosso-espaco {
     @include mixins.margem-central(80%);
+    .detalhes {
+        width: 100%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 2rem;
+        padding: 2rem 0;
+        .imgs-espaco {
+            max-width: 500px;
+        }
+        .espaco-textos {
+            @extend .imgs-espaco;
+            .titulo {
+                @include mixins.ff-fs-cl(variaveis.$ft-titulos, 1.8rem,variaveis.$cor-secundaria);
+                font-weight: 500;
+            }
+            .infos {
+                @include mixins.ff-fs-cl(variaveis.$ft-textos, 1.2rem,variaveis.$cor-primaria);
+                font-weight: 500;
+            }
+            .separador {
+                width: 100%;
+            }
+        }
+        // & -> Parent Selector -> faz referência ao elemento pai (nesse caso, .detalhes) ao qual ele está aninhado e permite o uso de pseudoclasses (e pseudoelementos)
+        &:nth-child(2) {
+            flex-direction: row-reverse;
+        }
+        // &::after {
+        //     content: "AAAAAAAAAAAAAS";
+        // }
+        //Look how it get on both childs of .detalhes
+    }
 }
