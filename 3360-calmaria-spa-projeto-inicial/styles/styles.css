@@ -33,7 +33,7 @@ header nav ul a {
   font-weight: 500;
 }
 header nav ul a:hover {
-  color: #85a0ff;
+  font-weight: 600;
 }
 header #home {
   max-width: 1040px;
@@ -138,4 +138,44 @@ header #home .img-home img {
   font-family: "Montserrat", sans-serif;
   font-size: 1.2rem;
   color: #0c0421;
+}
+
+#desconto {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+#desconto h4 {
+  font-family: "Krona One", sans-serif;
+  font-size: 1.6rem;
+  color: #0c0421;
+}
+#desconto p, #desconto .input-btn input {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  color: #0c0421;
+}
+#desconto .input-btn {
+  width: 790px;
+  height: 65px;
+  border: 1px solid #4e75ff;
+  border-radius: 65px;
+  margin: 0 auto;
+  display: inline-flex;
+}
+#desconto .input-btn input {
+  width: 513.5px;
+  border: none;
+  outline: none;
+  margin-left: 2rem;
+}
+#desconto .input-btn button {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  color: white;
+  width: 276.5px;
+  background-color: #4e75ff;
+  border-radius: 0 65px 65px 0;
+  border: none;
 }/*# sourceMappingURL=styles.css.map */

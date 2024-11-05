@@ -39,3 +39,19 @@ Os pré-processadores CSS como SASS oferecem vários benefícios, incluindo:
 -> Legibilidade: tornam o código CSS mais *legível* e *fácil de manter*.
 -> Reusabilidade: permitem que você *reutilize código CSS* em diferentes partes do seu projeto.
 -> Extensibilidade: permitem também que você *estenda as funcionalidades do CSS* com suas próprias *funções e mixins*.
+
+
+
+
+
+
+
+
+
+// Variáveis definidas no escopo global são acessíveis em todo o arquivo SASS e em qualquer arquivo SASS importado posteriormente.
+// (Perceba, que uso o @import para declarar a Partial Card. Dessa forma as variáveis declaradas no styles.scss, serão vistas por todos as Partials que forem declaradas após a criação destas variáveis.Mas, o uso do @import está sendo deixado de lado, e um dos motivos é por causar conflitos com variáveis, mixins e funções locais e também por não ser compatível com o CSS. No entanto, é possível que você encontre ele sendo usado em alguns projetos.)
+// Variáveis definidas no escopo local são acessíveis apenas dentro do bloco ou contexto onde foram criadas.
+// (Isso é particularmente útil para evitar conflitos de nomes de variáveis e isolar valores em partes específicas do código. Por exemplo, se você tiver um componente específico que requer cores exclusivas, pode definir variáveis de escopo local para esse componente sem afetar as variáveis globais.)
+// Atualmente, como o @import não está sendo mais usado, o @use veio para resolver as necessidades causada por ele. Então, quando for compartilhar informações de outros arquivos, como variáveis, como no exemplo abaixo, insira o @use ‘./variaveis’:
+
+Outro ponto importante, é que se for utilizar o @use para importar Partials no seu arquivo principal, no caso, aquele que será compilado pelo Sass, é importante se atentar a ordem das importações.
