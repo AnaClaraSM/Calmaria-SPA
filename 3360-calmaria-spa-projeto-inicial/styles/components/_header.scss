@@ -31,6 +31,7 @@ header {
                 text-decoration: none;
                 @include mixins.ff-fs-cl(variaveis.$ft-textos, 1rem, variaveis.$cor-primaria);
                 font-weight: 500;
+                // transition: 0.3s;
                 &:hover {
                     // color: variaveis.$cor-terciaria;
                     font-weight: 600;
@@ -67,6 +68,7 @@ header {
                 font-family: variaveis.$ft-textos;
                 font-size: 1.3rem; //22px
                 font-weight: 600;
+                transition: 0.3s;
                 &:hover {
                     cursor: pointer;
                     background-color: variaveis.$cor-terciaria;

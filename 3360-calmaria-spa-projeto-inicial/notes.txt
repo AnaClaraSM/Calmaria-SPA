@@ -55,3 +55,11 @@ Os pré-processadores CSS como SASS oferecem vários benefícios, incluindo:
 // Atualmente, como o @import não está sendo mais usado, o @use veio para resolver as necessidades causada por ele. Então, quando for compartilhar informações de outros arquivos, como variáveis, como no exemplo abaixo, insira o @use ‘./variaveis’:
 
 Outro ponto importante, é que se for utilizar o @use para importar Partials no seu arquivo principal, no caso, aquele que será compilado pelo Sass, é importante se atentar a ordem das importações.
+
+
+
+.SCSS E .SASS (SINTAXE RECUADA)
+Mesmo que não seja muito recomendado, é possível que você use um arquivo utilizando sintaxe recuada em um projeto com extensão ‘.scss’. Basta, no momento de importar esse código no arquivo de extensão ‘.scss’, passar o underline e a extensão, como no exemplo abaixo:
+    @use './abstract/root';
+    @use './components/header';
+    @use './components/_button.sass';

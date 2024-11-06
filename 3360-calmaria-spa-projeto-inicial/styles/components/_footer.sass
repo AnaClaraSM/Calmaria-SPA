@@ -1,0 +1,11 @@
+@use '../abstract/variaveis'
+@use '../abstract/mixins'
+
+//.sass -> sem ";" e sem {}. Use identação.
+
+footer
+    margin-top: 5rem
+    padding: 2rem
+    text-align: center
+    background-color: variaveis.$cor-quaternaria
+    @include mixins.ff-fs-cl(variaveis.$ft-textos, 1rem, variaveis.$cor-primaria)

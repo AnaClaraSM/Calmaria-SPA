@@ -7,3 +7,9 @@
 @use './components/servicos';
 @use './components/desconto';
 @use './components/contatos';
+// Sass
+@use './components/_footer.sass';
+
+//É possível usar arquivos .sass em projetos com extensão ‘.scss’. 
+//Não muito recomendado, apenas para fins de estudo.
+//Necessário importar com o underline (_) e a extensão.
